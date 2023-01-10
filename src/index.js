@@ -11,7 +11,6 @@ const countryInfo = document.querySelector(".country-info");
 
 searchInput.addEventListener('input',  debounce(onSearchInput, DEBOUNCE_DELAY));
 
-
 function onSearchInput (e) {
     e.preventDefault();
     let searchData = e.target.value.trim();
