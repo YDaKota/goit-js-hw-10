@@ -21,6 +21,7 @@ body {
 
 ul {
   list-style: none;
+  /* text-align: center; */
 }
 
 ul, h1, h2, p {
@@ -37,7 +38,20 @@ img {
   margin-right: 10px;
 }
 
-.country-card {
+/* input {
+  display: inherit;
+  margin: 0 auto;
+} */
+
+ul > li {
+  padding: 7px;
+}
+
+.country-info-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid rgb(159, 157, 157);
+  padding: 30px;
 }

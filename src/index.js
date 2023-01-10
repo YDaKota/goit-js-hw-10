@@ -54,16 +54,18 @@ function renderCountryList(countries) {
 }
 
 function renderCountry(countries) {
-    console.log(countries)
+    // console.log(countries)
     
     const markup = countries.map(({ name, capital, population, languages, flags }) => {
-        return `<ul>
+        return `<div class="country-info-card">
+        <ul>
         <li><img src="${flags.svg}" alt="Flag of ${name.official}" width = 40px height = 20px></li>
         <li><h1>${name.common}</h1></li>
         <li><p><b>Capital: </b>${capital}</p></li>
         <li><p><b>Population: </b>${population}</p></li>
         <li><p><b>Languages: </b>${Object.values(languages).join(', ')}</p></li>
-        </ul>`
+        </ul>
+        </div>`
         })
         .join("");
     countryList.innerHTML = '';
