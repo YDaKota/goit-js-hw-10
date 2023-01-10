@@ -35,7 +35,6 @@ function onSearchInput (e) {
         })
         //.finally(() => form.reset());
     } else {
-        return "Type country name"; 
         countryInfo.innerHTML = '';
         countryList.innerHTML = '';
     }
